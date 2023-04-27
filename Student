@@ -17,7 +17,7 @@ public class Main {
        String[] students = {}; 
 
     //   Hashtable<int, String> my_dict = new Hashtable<int, String>();
-       for (int i=0;i<2;i++) {
+       for (int i=0;i<3;i++) {
             Scanner inputObj = new Scanner(System.in);
             System.out.println("Enter name of the student ");     //get the first name
             String name1 = inputObj.nextLine();
@@ -32,7 +32,7 @@ public class Main {
             arrayList.add(student1);
             students = arrayList.toArray(students);   
         }
-        for (int i = 0; i<2;i++){
+        for (int i = 0; i<3;i++){
             System.out.println(students[i]);
         }
 
@@ -44,10 +44,10 @@ public class Main {
         // Student studObj = new Student();
     }
 
-    Main(String nameA, int idNumA, double averageMarkA) {
-        this.nameA = name;
-        this.idNumA = idNum;
-        this.averageMarkA = averageMark;
+    Main(String name, int idNum, double averageMark) {
+        this.name = name;
+        this.idNum = idNum;
+        this.averageMark = averageMark;
     }
     public double getAverageMark() {
         return averageMark;
